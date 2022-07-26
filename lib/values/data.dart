@@ -92,7 +92,7 @@ class Data {
   static List<NavItemData> menuItems = [
     NavItemData(name: StringConst.HOME, route: StringConst.HOME_PAGE),
     NavItemData(name: StringConst.ABOUT, route: StringConst.ABOUT_PAGE),
-    NavItemData(name: StringConst.WORKS, route: StringConst.WORKS_PAGE),
+    // NavItemData(name: StringConst.WORKS, route: StringConst.WORKS_PAGE),
     NavItemData(
       name: StringConst.EXPERIENCE,
       route: StringConst.EXPERIENCE_PAGE,
@@ -101,7 +101,7 @@ class Data {
       name: StringConst.CERTIFICATIONS,
       route: StringConst.CERTIFICATION_PAGE,
     ),
-    NavItemData(name: StringConst.CONTACT, route: StringConst.CONTACT_PAGE),
+    // NavItemData(name: StringConst.CONTACT, route: StringConst.CONTACT_PAGE),
   ];
 
   static List<SocialData> socialData = [
@@ -111,24 +111,9 @@ class Data {
       url: StringConst.GITHUB_URL,
     ),
     SocialData(
-      name: StringConst.LINKED_IN,
-      iconData: FontAwesomeIcons.linkedin,
-      url: StringConst.LINKED_IN_URL,
-    ),
-    SocialData(
-      name: StringConst.TWITTER,
-      iconData: FontAwesomeIcons.twitter,
-      url: StringConst.TWITTER_URL,
-    ),
-    SocialData(
       name: StringConst.INSTAGRAM,
       iconData: FontAwesomeIcons.instagram,
       url: StringConst.INSTAGRAM_URL,
-    ),
-    SocialData(
-      name: StringConst.TELEGRAM,
-      iconData: FontAwesomeIcons.telegram,
-      url: StringConst.TELEGRAM_URL,
     ),
   ];
 
@@ -164,42 +149,28 @@ class Data {
       url: StringConst.GITHUB_URL,
     ),
     SocialData(
-      name: StringConst.LINKED_IN,
-      iconData: FontAwesomeIcons.linkedin,
-      url: StringConst.LINKED_IN_URL,
-    ),
-    SocialData(
-      name: StringConst.TWITTER,
-      iconData: FontAwesomeIcons.twitter,
-      url: StringConst.TWITTER_URL,
+      name: StringConst.INSTAGRAM,
+      iconData: FontAwesomeIcons.instagram,
+      url: StringConst.INSTAGRAM_URL,
     ),
   ];
 
   static List<SocialData> socialData2 = [
     SocialData(
-      name: StringConst.LINKED_IN,
-      iconData: FontAwesomeIcons.linkedin,
-      url: StringConst.LINKED_IN_URL,
-    ),
-    SocialData(
-      name: StringConst.TWITTER,
-      iconData: FontAwesomeIcons.twitter,
-      url: StringConst.TWITTER_URL,
+      name: StringConst.GITHUB,
+      iconData: FontAwesomeIcons.github,
+      url: StringConst.GITHUB_URL,
     ),
     SocialData(
       name: StringConst.INSTAGRAM,
       iconData: FontAwesomeIcons.instagram,
       url: StringConst.INSTAGRAM_URL,
     ),
-    SocialData(
-      name: StringConst.TELEGRAM,
-      iconData: FontAwesomeIcons.telegram,
-      url: StringConst.TELEGRAM_URL,
-    ),
+
   ];
 
   static List<SkillData> skillData = [
-    SkillData(skillLevel: 95, skillName: StringConst.FLUTTER),
+    SkillData(skillLevel: 60, skillName: StringConst.FLUTTER),
     SkillData(skillLevel: 70, skillName: StringConst.JAVA),
     SkillData(skillLevel: 78, skillName: StringConst.ANDROID),
     SkillData(skillLevel: 70, skillName: StringConst.KOTLIN),

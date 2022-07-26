@@ -99,18 +99,19 @@ class NavBar extends StatelessWidget {
               AppLogo(titleColor: appLogoColor),
               Spacer(),
               ..._buildNavItems(context, menuList: Data.menuItems),
-              AeriumButton(
-                height: Sizes.HEIGHT_36,
-                hasIcon: false,
-                width: 80,
-                buttonColor: AppColors.white,
-                borderColor: appLogoColor,
-                onHoverColor: appLogoColor,
-                title: StringConst.RESUME.toUpperCase(),
-                onPressed: () {
-                  Functions.launchUrl(DocumentPath.CV);
-                },
-              ),
+              //이력서
+              // AeriumButton(
+              //   height: Sizes.HEIGHT_36,
+              //   hasIcon: false,
+              //   width: 80,
+              //   buttonColor: AppColors.white,
+              //   borderColor: appLogoColor,
+              //   onHoverColor: appLogoColor,
+              //   title: StringConst.RESUME.toUpperCase(),
+              //   onPressed: () {
+              //     Functions.launchUrl(DocumentPath.CV);
+              //   },
+              // ),
             ],
           ),
           Spacer(),

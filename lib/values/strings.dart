@@ -2,9 +2,9 @@ part of values;
 
 class StringConst {
   //strings
-  static const String APP_NAME = "David Legend Portfolio";
-  static const String APP_TITLE = "David Legend Portfolio";
-  static const String SITE_URL = "https://davidcobbina.com";
+  static const String APP_NAME = "Sac Toast Portfolio";
+  static const String APP_TITLE = "Sac Toast Portfolio";
+  static const String SITE_URL = "https://toastceo.com";
 
   static const String HOME = "Home";
   static const String ABOUT = "About";
@@ -17,19 +17,20 @@ class StringConst {
   static const String PHONE_NUMBER = "Phone Number";
   static const String RESUME = "Resume";
   static const String CERTIFICATIONS = "Certifications";
-  static const String EMAIL_VALUE = "davidcobbina47@gmail.com";
+  static const String EMAIL_VALUE = "issac0122@bible.ac.kr";
 
   // Home Page
-  static const String HI = "Hi,";
-  static const String DEV_INTRO = "I'm David.";
-  static const String DEV_TITLE = "Software Engineer.";
-  static const String DEV_DESC = "Full Stack Developer / Flutter Expert";
-  static const String SEE_MY_WORKS = "See my works";
+  static const String HI = "Hello,";
+  static const String DEV_INTRO = "My name is Sac Lee.";
+  static const String DEV_TITLE = "Machine Learning Engineer.";
+  static const String DEV_DESC = "I am a student who dreams of \nbecoming a developer";
+  static const String SEE_MY_WORKS = "TOAST CEO";
   static const String SCROLL_DOWN = "Scroll Down";
-  static const String CRAFTED_WITH_LOVE = "Crafted with love.";
-  static const String SELECTION = "Here is selection of my recent works.";
+  static const String CRAFTED_WITH_LOVE = "Slowly and consistently.";
+  static const String Psalm1 = "Commit your way to the Lord, Trust in Him also and He will do it.";
+  static const String Psalm2 = "Psalm 37:5";
   static const String THERES_MORE = "There's more";
-  static const String VIEW_ALL_PROJECTS = "view all projects";
+  static const String VIEW_ALL_PROJECTS = "View My Career";
 
   // Contact Page
   static const String GET_IN_TOUCH = "Get in touch.";
@@ -46,10 +47,10 @@ class StringConst {
   static const String MESSAGE_ERROR_MSG =
       "* Please enter something to send this form";
   static const String SEND_MESSAGE = "Send Message";
-  static const String COPYRIGHT = "©  2021  Built by  $DEV_NAME,";
-  static const String DESIGNED_BY = "Designed by Julius G.";
+  static const String COPYRIGHT = "©  2022  Built by  $DEV_NAME,";
+  static const String DESIGNED_BY = "Designed by david-legend.";
   static const String DESIGN_LINK =
-      "https://www.behance.net/gallery/63574251/Personal-Portfolio-Website-Design";
+      "https://github.com/david-legend/david-legend.github.io";
   static const String MESSAGE_ME = "Message me";
   static const String EMAIL_RESPONSE = "Thanks for reaching out to me! I will get back to you ASAP";
   static const String EMAIL_FAILED_RESPONSE = "Something went wrong. Please send me an email manually - ${StringConst.DEV_EMAIL}";
@@ -84,9 +85,9 @@ class StringConst {
   static const String FAMOUS_QUOTE =
       "“I have no special talents. I am only passionately curious.”";
   static const String FAMOUS_QUOTE_AUTHOR = "Albert Einstein";
-  static const String WORK_TOGETHER = "Let's work together.";
+  static const String WORK_TOGETHER = "Please Contact Me.";
   static const String AVAILABLE_FOR_FREELANCE =
-      "I'm available for Consultancy & Freelancing.";
+      "I'm interested in AI & deep learning";
   static const String SAY_HELLO = "Say Hello";
 
   // Works Page
@@ -110,8 +111,8 @@ class StringConst {
   static const String VIEW = "View";
   static const String COMING_SOON = "COMING SOON !!";
   static const String BUILT_WITH_FLUTTER = "Built using ";
-  static const String DEV_EMAIL = "davidcobbina47@gmail.com";
-  static const String EMAIL_URL = "mailto:<$DEV_EMAIL>?subject=&body=";
+  static const String DEV_EMAIL = "issac0122@bible.ac.kr";
+  static const String EMAIL_URL = "mailto:$DEV_EMAIL?subject=&body=";
 
   static const String KEY_SKILLS = "KEY SKILLS";
   static const String EXPERIENCE_2 = "EXPERIENCE";
@@ -123,7 +124,7 @@ class StringConst {
   static const String PROJECT_NAME = "Project Name";
 
   static const String INTRO = "Hi, my name is";
-  static const String DEV_NAME = "David Cobbina";
+  static const String DEV_NAME = "Sac Toast";
   static const String PUNCH_LINE = "I build things with flutter";
   static const String SPECIALITY = "FLUTTER DEV";
   static const String DESIGNED_IN = "Made in Ghana with ";
@@ -166,12 +167,12 @@ class StringConst {
 
   //Socials
 
-  static const String GITHUB_URL = "https://github.com/david-legend";
+  static const String GITHUB_URL = "https://github.com/toast-ceo";
   static const String LINKED_IN_URL =
       "https://www.linkedin.com/in/david-cobbina-7b0226119";
   static const String TWITTER_URL = "https://twitter.com/DavidLegend47";
   static const String INSTAGRAM_URL =
-      "https://www.instagram.com/david_legend_47";
+      "https://www.instagram.com/moodsac_";
   static const String TELEGRAM_URL = "https://t.me/DavidLegend";
 
   //Contacts

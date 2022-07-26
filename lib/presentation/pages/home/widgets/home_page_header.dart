@@ -1,5 +1,6 @@
 import 'package:aerium/core/layout/adaptive.dart';
 import 'package:aerium/core/utils/functions.dart';
+import 'package:aerium/presentation/pages/about/about_page.dart';
 import 'package:aerium/presentation/pages/home/widgets/scroll_down.dart';
 import 'package:aerium/presentation/pages/widgets/socials.dart';
 import 'package:aerium/presentation/pages/works/works_page.dart';
@@ -152,17 +153,17 @@ class _HomePageHeaderState extends State<HomePageHeader>
                       position: animation,
                       child: Stack(
                         children: [
-                          RotationTransition(
-                            turns: rotationController,
-                            child: Image.asset(
-                              ImagePath.DEV_SKILLS,
-                              width: screenWidth,
-                            ),
-                          ),
-                          Image.asset(
-                            ImagePath.DEV_MEDITATE,
-                            width: screenWidth,
-                          ),
+                          // RotationTransition(
+                          //   turns: rotationController,
+                          //   child: Image.asset(
+                          //     ImagePath.DEV_SKILLS,
+                          //     width: screenWidth,
+                          //   ),
+                          // ),
+                          // Image.asset(
+                          //   ImagePath.DEV_MEDITATE,
+                          //   width: screenWidth,
+                          // ),
                         ],
                       ),
                     ),
@@ -199,19 +200,20 @@ class _HomePageHeaderState extends State<HomePageHeader>
                     child: AnimatedSlideTranstion(
                       controller: controller,
                       position: animation,
+                      // 사진
                       child: Stack(
                         children: [
-                          RotationTransition(
-                            turns: rotationController,
-                            child: Image.asset(
-                              ImagePath.DEV_SKILLS,
-                              width: screenWidth * 0.35,
-                            ),
-                          ),
-                          Image.asset(
-                            ImagePath.DEV_MEDITATE,
-                            width: screenWidth * 0.35,
-                          ),
+                          // RotationTransition(
+                          //   turns: rotationController,
+                          //   child: Image.asset(
+                          //     ImagePath.DEV_SKILLS,
+                          //     width: screenWidth * 0.35,
+                          //   ),
+                          // ),
+                          // Image.asset(
+                          //   ImagePath.DEV_MEDITATE,
+                          //   width: screenWidth * 0.35,
+                          // ),
                         ],
                       ),
                     ),
@@ -403,7 +405,7 @@ class _AboutDevState extends State<AboutDev> {
               fontWeight: FontWeight.w500,
             ),
             onTap: () {
-              Navigator.pushNamed(context, WorksPage.worksPageRoute);
+              Navigator.pushNamed(context, AboutPage.aboutPageRoute);
             },
           ),
         ),

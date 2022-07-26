@@ -9,6 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:visibility_detector/visibility_detector.dart';
 
+import '../../../core/utils/functions.dart';
 import '../contact_page.dart';
 
 class AnimatedFooter extends StatefulWidget {
@@ -139,7 +140,7 @@ class _AnimatedFooterState extends State<AnimatedFooter>
             AnimatedBubbleButton(
               title: StringConst.SAY_HELLO.toUpperCase(),
               onTap: () {
-                Navigator.pushNamed(context, ContactPage.contactPageRoute);
+                Functions.launchUrl(StringConst.EMAIL_URL);
               },
             ),
             Spacer(flex: 3),

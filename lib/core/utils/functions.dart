@@ -3,6 +3,8 @@ import 'package:aerium/presentation/widgets/project_item.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+
+
 class Functions {
   static void launchUrl(String url) async {
     await launch(url);

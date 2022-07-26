@@ -1,9 +1,9 @@
 import 'package:aerium/core/layout/adaptive.dart';
 import 'package:aerium/core/utils/functions.dart';
+import 'package:aerium/presentation/pages/experience_page.dart';
 import 'package:aerium/presentation/pages/home/widgets/home_page_header.dart';
 import 'package:aerium/presentation/pages/home/widgets/loading_page.dart';
 import 'package:aerium/presentation/pages/widgets/animated_footer.dart';
-import 'package:aerium/presentation/pages/works/works_page.dart';
 import 'package:aerium/presentation/widgets/animated_positioned_text.dart';
 import 'package:aerium/presentation/widgets/animated_slide_transtion.dart';
 import 'package:aerium/presentation/widgets/animated_text_slide_box_transition.dart';
@@ -15,6 +15,8 @@ import 'package:flutter/material.dart';
 import 'package:aerium/values/values.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:visibility_detector/visibility_detector.dart';
+
+import '../about/about_page.dart';
 
 class HomePage extends StatefulWidget {
   static const String homePageRoute = StringConst.HOME_PAGE;
@@ -103,6 +105,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
       onLoadingAnimationDone: () {
         _slideTextController.forward();
       },
+      // 로드 시 뜨는
       customLoadingAnimation: LoadingHomePageAnimation(
         text: StringConst.DEV_NAME,
         style: textTheme.headline4!.copyWith(color: AppColors.white),
@@ -123,6 +126,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
             scrollToWorksKey: key,
           ),
           CustomSpacer(heightFactor: 0.1),
+          // 내 깃허브, 노션 링크들
           VisibilityDetector(
             key: Key('recent-projects'),
             onVisibilityChanged: (visibilityInfo) {
@@ -152,7 +156,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                       parent: _recentWorksController,
                       curve: Interval(0.6, 1.0, curve: Curves.fastOutSlowIn),
                     ),
-                    text: StringConst.SELECTION,
+                    text: StringConst.Psalm1,
                     textStyle: textTheme.bodyText1?.copyWith(
                       fontSize: responsiveSize(
                         context,
@@ -163,37 +167,54 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                       fontWeight: FontWeight.w400,
                     ),
                   ),
+                  AnimatedPositionedText(
+                    controller: CurvedAnimation(
+                      parent: _recentWorksController,
+                      curve: Interval(0.6, 1.0, curve: Curves.fastOutSlowIn),
+                    ),
+                    text: StringConst.Psalm2,
+                    textStyle: textTheme.bodyText1?.copyWith(
+                      fontSize: responsiveSize(
+                        context,
+                        Sizes.TEXT_SIZE_14,
+                        Sizes.TEXT_SIZE_16,
+                      ),
+                      height: 2,
+                      fontWeight: FontWeight.w400,
+                    ),
+                  ),
                 ],
               ),
             ),
           ),
           CustomSpacer(heightFactor: 0.1),
-          ResponsiveBuilder(
-            builder: (context, sizingInformation) {
-              double screenWidth = sizingInformation.screenSize.width;
-
-              if (screenWidth <= RefinedBreakpoints().tabletSmall) {
-                return Column(
-                  children: _buildProjectsForMobile(
-                    data: Data.recentWorks,
-                    projectHeight: projectItemHeight.toInt(),
-                    subHeight: subHeight.toInt(),
-                  ),
-                );
-              } else {
-                return Container(
-                  height: (subHeight * (Data.recentWorks.length)) + extra,
-                  child: Stack(
-                    children: _buildRecentProjects(
-                      data: Data.recentWorks,
-                      projectHeight: projectItemHeight.toInt(),
-                      subHeight: subHeight.toInt(),
-                    ),
-                  ),
-                );
-              }
-            },
-          ),
+          // 최근에 한 프로젝트
+          // ResponsiveBuilder(
+          //   builder: (context, sizingInformation) {
+          //     double screenWidth = sizingInformation.screenSize.width;
+          //
+          //     if (screenWidth <= RefinedBreakpoints().tabletSmall) {
+          //       return Column(
+          //         children: _buildProjectsForMobile(
+          //           data: Data.recentWorks,
+          //           projectHeight: projectItemHeight.toInt(),
+          //           subHeight: subHeight.toInt(),
+          //         ),
+          //       );
+          //     } else {
+          //       return Container(
+          //         height: (subHeight * (Data.recentWorks.length)) + extra,
+          //         child: Stack(
+          //           children: _buildRecentProjects(
+          //             data: Data.recentWorks,
+          //             projectHeight: projectItemHeight.toInt(),
+          //             subHeight: subHeight.toInt(),
+          //           ),
+          //         ),
+          //       );
+          //     }
+          //   },
+          // ),
           CustomSpacer(heightFactor: 0.05),
           Container(
             margin: margin,
@@ -218,7 +239,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                     targetOffset: Offset(0.05, 0),
                     child: TextButton(
                       onPressed: () {
-                        Navigator.pushNamed(context, WorksPage.worksPageRoute);
+                        Navigator.pushNamed(context, ExperiencePage.experiencePageRoute);
                       },
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
